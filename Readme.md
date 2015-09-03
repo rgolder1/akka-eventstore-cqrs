@@ -10,6 +10,10 @@ Run:
 
 ./run-node.sh
 
+To run on remote machine:
+
+./run-node.sh --ext-ip=192.x.y.z
+
 Navigate to:
 http://127.0.0.1:2113/web/index.html#/
 admin:changeit
@@ -22,3 +26,5 @@ curl -i  -d@event.txt http://127.0.0.1:2113/streams/newstream  -H "Content-Type:
 Sub:
 curl -i "http://127.0.0.1:2113/streams/newstream" -H "Accept:application/atom+xml"
 curl -i http://127.0.0.1:2113/streams/newstream/0 -H "Accept: application/json"
+
+To run demo, navigate to RunAkkaDemo in /src/test/java/ and run the unit test.

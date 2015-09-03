@@ -1,10 +1,10 @@
 package com.aztec.es;
 
-
 import com.aztec.es.read.AtomReader;
 import com.aztec.es.read.ReadEventExample;
 import com.aztec.es.read.SubscribeToAllExample;
 import com.aztec.es.write.WriteEventExample;
+import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,7 +21,8 @@ import static com.aztec.es.DemoConstants.DEFAULT_EVENT_STREAM_PREFIX;
 public class RunAkkaDemo {
     private static final Logger LOGGER = LoggerFactory.getLogger(RunAkkaDemo.class);
 
-    public static void main(String args[]) throws Exception {
+    @Test
+    public void runDemo() throws Exception {
         LOGGER.info("Starting RunAkkaDemo.");
 
         // Set up some UUIDs.
